@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Hind Enterprises</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/style.css">
+</head>
+<body class="bg-bg-primary text-text-main font-sans antialiased selection:bg-accent-blue selection:text-white">
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 bg-bg-primary/80 backdrop-blur-md border-b border-border-thin">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="/" class="flex items-center gap-3 group">
+                <div class="relative w-10 h-10 md:w-12 md:h-12 flex items-center justify-center overflow-hidden rounded-full shrink-0">
+                    <img src="/logo.png" alt="Hind Enterprises Logo" class="absolute w-[180%] h-[180%] max-w-none object-cover mix-blend-screen filter contrast-125 brightness-90">
+                </div>
+                <span class="font-sans text-lg md:text-xl font-bold tracking-tight text-white group-hover:text-accent-blue transition-colors">
+                    Hind Enterprises
+                </span>
+            </a>
+            
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium tracking-widest">
+                <a href="/" class="text-gray-300 hover:text-accent-blue transition-colors">HOME</a>
+                <a href="/products/" class="text-gray-300 hover:text-accent-blue transition-colors">PRODUCTS</a>
+                <a href="/about/" class="text-accent-blue transition-colors">ABOUT</a>
+                <a href="/contact/" class="px-5 py-2.5 bg-accent-blue text-white rounded hover:bg-blue-700 transition-colors">CONTACT</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="md:hidden p-2 text-gray-400 hover:text-white transition-colors focus:outline-none" onclick="
+                const menu = document.getElementById('mobile-menu');
+                const icon = this.querySelector('svg');
+                if (menu.classList.contains('hidden')) {
+                    menu.classList.remove('hidden');
+                    icon.innerHTML = '<path stroke-linecap=\'round\' stroke-linejoin=\'round\' stroke-width=\'2\' d=\'M6 18L18 6M6 6l12 12\'></path>';
+                } else {
+                    menu.classList.add('hidden');
+                    icon.innerHTML = '<path stroke-linecap=\'round\' stroke-linejoin=\'round\' stroke-width=\'2\' d=\'M4 6h16M4 12h16M4 18h16\'></path>';
+                }
+            ">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden absolute top-full left-0 w-full bg-bg-primary/95 backdrop-blur-xl border-b border-border-thin shadow-2xl">
+            <div class="flex flex-col px-6 py-8 space-y-6 text-sm font-medium tracking-widest text-center">
+                <a href="/" class="text-gray-300 hover:text-accent-blue transition-colors block">HOME</a>
+                <a href="/products/" class="text-gray-300 hover:text-accent-blue transition-colors block">PRODUCTS</a>
+                <a href="/about/" class="text-accent-blue transition-colors block">ABOUT</a>
+                <a href="/contact/" class="inline-block mx-auto px-8 py-3 bg-accent-blue text-white rounded hover:bg-blue-700 transition-colors">CONTACT</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="relative pt-40 pb-24 md:pt-52 md:pb-32 px-6 overflow-hidden">
+            <div class="absolute inset-0 z-0 opacity-20">
+                <div class="absolute inset-0" style="background-image: linear-gradient(var(--border-thin) 1px, transparent 1px), linear-gradient(90deg, var(--border-thin) 1px, transparent 1px); background-size: 40px 40px;"></div>
+            </div>
+            <div class="max-w-7xl mx-auto relative z-10">
+                <div class="inline-block mb-4 px-3 py-1 border border-border-thin rounded-full bg-bg-card/50 backdrop-blur-sm">
+                    <span class="font-mono text-xs tracking-widest text-accent-blue uppercase">About Us</span>
+                </div>
+                <h1 class="text-5xl md:text-7xl font-bold tracking-tight mb-6 max-w-4xl text-gradient leading-tight">
+                    YOUR TRUSTED<br/>PARTNER.
+                </h1>
+                <p class="text-lg md:text-xl text-gray-400 max-w-2xl mb-10 leading-relaxed font-light">
+                    Welcome to Hind Enterprises – Your Trusted Partner for Quality Hardware and Machinery Solutions in India.
+                </p>
+            </div>
+        </section>
+
+        <!-- Introduction Section -->
+        <section class="py-24 px-6 bg-bg-card border-y border-border-thin">
+            <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="font-mono text-sm tracking-widest text-accent-blue mb-4 uppercase">A Legacy of Excellence</h2>
+                    <h3 class="text-3xl md:text-4xl font-bold mb-6">DEDICATED TO PREMIUM QUALITY.</h3>
+                    <p class="text-gray-400 leading-relaxed mb-6">
+                        At Hind Enterprises, we are dedicated to providing premium hardware and machinery products to meet the diverse needs of our customers across India. With years of experience in the industry, we have built a reputation for offering high-quality products, exceptional service, and unmatched reliability.
+                    </p>
+                    <p class="text-gray-400 leading-relaxed">
+                        We specialize in hardware solutions, including a wide range of bearing products and machinery components. Our commitment to excellence has led us to form strategic partnerships with leading brands, ensuring that our customers receive only the best and most advanced products available in the market.
+                    </p>
+                </div>
+                <div class="relative">
+                    <div class="aspect-square rounded-lg overflow-hidden border border-border-thin relative z-10">
+                        <img id="premium-quality-img" src="/legacy-excellence.png" alt="Precision Engineering" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" />
+                    </div>
+                    <div class="absolute -bottom-6 -right-6 w-full h-full border border-accent-blue rounded-lg z-0"></div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Mission Section -->
+        <section class="py-24 px-6 relative overflow-hidden">
+            <div class="absolute inset-0 z-0 opacity-10">
+                <div class="absolute inset-0" style="background-image: linear-gradient(var(--border-thin) 1px, transparent 1px), linear-gradient(90deg, var(--border-thin) 1px, transparent 1px); background-size: 40px 40px;"></div>
+            </div>
+            <div class="max-w-4xl mx-auto relative z-10 text-center">
+                <svg class="w-12 h-12 text-accent-blue mx-auto mb-8 opacity-80" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                <h2 class="font-mono text-sm tracking-widest text-accent-blue mb-4 uppercase">Our Mission</h2>
+                <p class="text-2xl md:text-3xl text-gray-300 leading-relaxed font-light mb-8">
+                    "To empower businesses and industries with top-quality products that boost productivity, improve efficiency, and drive growth."
+                </p>
+                <p class="text-lg text-gray-500 max-w-2xl mx-auto">
+                    We aim to be the go-to provider of hardware and machinery products, offering everything from small components to large-scale machinery that meets the specific requirements of your projects.
+                </p>
+            </div>
+        </section>
+
+        <!-- Partnerships & Offerings -->
+        <section class="py-24 px-6 bg-bg-card border-y border-border-thin">
+            <div class="max-w-7xl mx-auto">
+                <div class="max-w-3xl mb-16">
+                    <h2 class="font-mono text-sm tracking-widest text-accent-blue mb-4 uppercase">Strategic Partnerships</h2>
+                    <h3 class="text-3xl md:text-4xl font-bold mb-6">TRUSTED GLOBAL BRANDS.</h3>
+                    <p class="text-gray-400 leading-relaxed text-lg">
+                        Through our collaborations with trusted global and local brands, we bring you products that adhere to the highest standards of quality and performance. Our partnerships allow us to offer a wide range of cutting-edge products, ensuring you always have access to the latest technologies in the industry.
+                    </p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="glass p-8 rounded-lg hover:-translate-y-2 transition-transform duration-300 group">
+                        <div class="w-12 h-12 bg-bg-primary border border-border-thin rounded flex items-center justify-center mb-6 group-hover:border-accent-blue transition-colors">
+                            <svg class="w-6 h-6 text-accent-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Bearings</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed">High-precision bearings for various industrial applications, ensuring smooth operations.</p>
+                    </div>
+                    <div class="glass p-8 rounded-lg hover:-translate-y-2 transition-transform duration-300 group">
+                        <div class="w-12 h-12 bg-bg-primary border border-border-thin rounded flex items-center justify-center mb-6 group-hover:border-accent-blue transition-colors">
+                            <svg class="w-6 h-6 text-accent-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Plasma Hardware</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed">Advanced plasma cutting solutions offering precision, reliability, and cutting-edge technology.</p>
+                    </div>
+                    <div class="glass p-8 rounded-lg hover:-translate-y-2 transition-transform duration-300 group">
+                        <div class="w-12 h-12 bg-bg-primary border border-border-thin rounded flex items-center justify-center mb-6 group-hover:border-accent-blue transition-colors">
+                            <svg class="w-6 h-6 text-accent-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Machinery Components</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed">Durable and high-performance components designed to extend the operational life of systems.</p>
+                    </div>
+                    <div class="glass p-8 rounded-lg hover:-translate-y-2 transition-transform duration-300 group">
+                        <div class="w-12 h-12 bg-bg-primary border border-border-thin rounded flex items-center justify-center mb-6 group-hover:border-accent-blue transition-colors">
+                            <svg class="w-6 h-6 text-accent-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Industrial Equipment</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed">A comprehensive range of tools and equipment to meet the specific requirements of your projects.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us Section -->
+        <section class="py-24 px-6">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <h2 class="font-mono text-sm tracking-widest text-accent-blue mb-4 uppercase">The Hind Advantage</h2>
+                    <h3 class="text-3xl md:text-4xl font-bold mb-6">WHY CHOOSE US?</h3>
+                </div>
+                
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="glass p-8 rounded-lg border-t-2 border-t-accent-blue">
+                        <h3 class="text-xl font-bold mb-4">Reliability</h3>
+                        <p class="text-gray-400 leading-relaxed text-sm">We only offer products from trusted, well-known brands, ensuring consistent performance and durability.</p>
+                    </div>
+                    <div class="glass p-8 rounded-lg border-t-2 border-t-accent-blue">
+                        <h3 class="text-xl font-bold mb-4">Quality Assurance</h3>
+                        <p class="text-gray-400 leading-relaxed text-sm">Every product we supply is thoroughly tested for quality and performance to meet the highest industry standards.</p>
+                    </div>
+                    <div class="glass p-8 rounded-lg border-t-2 border-t-accent-blue">
+                        <h3 class="text-xl font-bold mb-4">Customer-Centric</h3>
+                        <p class="text-gray-400 leading-relaxed text-sm">Your needs are our priority, and we work tirelessly to provide personalized solutions tailored to your business.</p>
+                    </div>
+                    <div class="glass p-8 rounded-lg border-t-2 border-t-accent-blue">
+                        <h3 class="text-xl font-bold mb-4">Wide Range</h3>
+                        <p class="text-gray-400 leading-relaxed text-sm">From bearings to advanced machinery components, we have a vast array of products to meet your specific requirements.</p>
+                    </div>
+                    <div class="glass p-8 rounded-lg border-t-2 border-t-accent-blue lg:col-span-2">
+                        <h3 class="text-xl font-bold mb-4">Industry Expertise</h3>
+                        <p class="text-gray-400 leading-relaxed text-sm">With years of experience in the field, we understand the demands of different industries and tailor our products accordingly. Whether you are in manufacturing, construction, automotive, or any other industry, we provide the tools you need to excel.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="py-32 px-6 relative overflow-hidden bg-bg-card border-t border-border-thin">
+            <div class="absolute inset-0 z-0 opacity-20">
+                <div class="absolute inset-0" style="background-image: linear-gradient(var(--border-thin) 1px, transparent 1px), linear-gradient(90deg, var(--border-thin) 1px, transparent 1px); background-size: 40px 40px;"></div>
+            </div>
+            <div class="max-w-3xl mx-auto relative z-10 text-center">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6 tracking-tight">Your Partner in Success</h2>
+                <p class="text-gray-400 leading-relaxed mb-10 text-xl font-light">
+                    We invite you to explore our range of products and services. Reach out to us to learn more about how Hind Enterprises can support your business with quality hardware and machinery solutions.
+                </p>
+                <a href="/contact/" class="inline-flex items-center justify-center px-8 py-4 bg-accent-blue text-white font-medium rounded hover:bg-blue-700 transition-all duration-300">
+                    CONTACT US TODAY
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-border-thin bg-bg-primary pt-16 pb-8 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+                <!-- Brand -->
+                <div class="space-y-4 lg:col-span-2">
+                    <a href="/" class="flex items-center gap-3 group">
+                        <div class="relative w-12 h-12 md:w-14 md:h-14 flex items-center justify-center overflow-hidden rounded-full">
+                            <img src="/logo.png" alt="Hind Enterprises Logo" class="absolute w-[180%] h-[180%] max-w-none object-cover mix-blend-screen filter contrast-125 brightness-90">
+                        </div>
+                        <span class="font-sans text-xl md:text-2xl font-bold tracking-tight text-white group-hover:text-accent-blue transition-colors">
+                            Hind Enterprises
+                        </span>
+                    </a>
+                    <p class="text-gray-400 text-sm leading-relaxed max-w-sm">
+                        Your Trusted Partner for Quality Hardware and Machinery Solutions in India. Engineered for absolute precision.
+                    </p>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="font-mono text-sm tracking-widest text-white uppercase mb-6">Quick Links</h4>
+                    <ul class="space-y-3 text-sm text-gray-400">
+                        <li><a href="/" class="hover:text-accent-blue transition-colors">Home</a></li>
+                        <li><a href="/products/" class="hover:text-accent-blue transition-colors">Products</a></li>
+                        <li><a href="/about/" class="hover:text-accent-blue transition-colors">About Us</a></li>
+                        <li><a href="/contact/" class="hover:text-accent-blue transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="font-mono text-sm tracking-widest text-white uppercase mb-6">Contact</h4>
+                    <ul class="space-y-3 text-sm text-gray-400">
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-accent-blue shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                            <a href="mailto:hindenterprises.nasik@gmail.com" class="hover:text-accent-blue transition-colors break-all">hindenterprises.nasik@gmail.com</a>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-accent-blue shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                            <a href="tel:+919373534171" class="hover:text-accent-blue transition-colors">+91 93735 34171</a>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-accent-blue shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.243-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                            <span>Nashik, Maharashtra</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-border-thin pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <div class="text-sm text-gray-500 font-mono">
+                    &copy; 2026 Hind Enterprises. All rights reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
